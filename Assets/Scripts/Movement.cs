@@ -5,14 +5,12 @@ public class Movement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public float speed = 0.01f; // Speed of the player movement
-    public float jumpForce = 10f; // Force of the jump
-    private bool grounded = true; // Whether the player is on the ground
-    private Rigidbody rb; // Reference to the player's rigidbody
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -34,17 +32,6 @@ public class Movement : MonoBehaviour
         {
             transform.position += Vector3.right * speed;
         }
-        if(Input.GetKey(KeyCode.Space) && grounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            grounded = false;
-        }
-        void OnCollisionStay(Collision collision)
-        {
-            if(collision.gameObject.CompareTag("Ground"))
-            {
-                grounded = true;
-            }
-        }
+       
     }
 }
