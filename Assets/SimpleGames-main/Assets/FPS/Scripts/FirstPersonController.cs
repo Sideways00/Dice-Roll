@@ -9,7 +9,7 @@ public class FirstPersonController : MonoBehaviour
     public Camera Eyes;
     
     public Rigidbody RB;
-    public Projectile3DController ProjectilePrefab;
+    
     
     //Character stats
     public float MouseSensitivity = 3;
@@ -67,13 +67,7 @@ public class FirstPersonController : MonoBehaviour
             RB.linearVelocity = move;
         }
 
-        //If I click. . .
-        if (Input.GetMouseButtonDown(0))
-        {
-            //Spawn a projectile right in front of my eyes
-            Instantiate(ProjectilePrefab, Eyes.transform.position + Eyes.transform.forward,
-                Eyes.transform.rotation);
-        }
+        
     }
 
     //I count as being on the ground if I'm touching at least one solid object
