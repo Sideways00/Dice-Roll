@@ -196,7 +196,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7571027385484227438}
   - component: {fileID: 5108039420001038706}
-  - component: {fileID: 1379752039997316578}
+  - component: {fileID: 4280026761536217700}
+  - component: {fileID: 4627378778671692316}
   m_Layer: 0
   m_Name: DiceR
   m_TagString: Untagged
@@ -253,7 +254,27 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &1379752039997316578
+--- !u!114 &4280026761536217700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6087551189047953312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027a0f91c42ed824a98e4f85409aff11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DiceRoll
+  diceSides:
+  - {fileID: 7320098407389050805}
+  - {fileID: 8286451249956625527}
+  - {fileID: 8866204918038892375}
+  - {fileID: 5512583820602536503}
+  - {fileID: 6436328390270233158}
+  - {fileID: 6338501237895852649}
+  swordDamage: 0
+--- !u!65 &4627378778671692316
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,8 +293,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6065619, y: 0.5978008, z: 0.6058017}
-  m_Center: {x: -0.1599356, y: 0.54030764, z: -0.29884773}
+  m_Size: {x: 0.6194138, y: 0.61951137, z: 0.5978792}
+  m_Center: {x: -0.16600332, y: 0.5446223, z: -0.28960472}
 --- !u!1001 &8127980140569180307
 PrefabInstance:
   m_ObjectHideFlags: 0
